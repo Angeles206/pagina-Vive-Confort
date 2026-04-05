@@ -1,0 +1,78 @@
+/* Estilos para la página Sobre Nosotros - ViveConfort */
+
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.about-header h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ad1457;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.vision-box {
+    background-color: #fce4ec;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    border-left: 5px solid #ad1457;
+}
+
+.social-section {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 2.5rem;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Colores de marca para iconos */
+.fa-whatsapp { color: #25D366; }
+.fa-instagram { color: #E4405F; }
+.fa-tiktok { color: #000000; }
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #ad1457;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: background 0.3s;
+    border-radius: 28px;
+}
+
+.btn-volver:hover {
+    background: #880e4f;
+    color: #000000;
+}

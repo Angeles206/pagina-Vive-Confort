@@ -1,0 +1,152 @@
+/* --- LIMPIEZA Y FONDO --- */
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #fce4ec; 
+    background-image: radial-gradient(#f8bbd0 2px, transparent 2px); 
+    background-size: 30px 30px; 
+}
+
+/* --- HEADER --- */
+.header-tienda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 2px solid #ad1457;
+    background-color: #fce4ec;
+}
+
+.logo-img { 
+    height: 60px; 
+    object-fit: contain; 
+}
+
+/* --- CONTENEDOR BLANCO --- */
+#contenedor {
+    background-color: white;
+    max-width: 650px; 
+    margin: 60px auto;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* TÍTULO CON ESTILO DE PERFIL */
+.titulo-login {
+    text-align: center;
+    font-size: 3.2em;
+    color: #ad1457;
+    margin: 0 0 30px 0;
+    font-family: 'Dancing Script', cursive; 
+}
+
+/* --- FORMULARIO HORIZONTAL --- */
+.controles {
+    margin: 0 auto 40px auto;
+    width: 450px; 
+}
+
+.completo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.completo label {
+    color: #000;
+    font-weight: bold;
+    flex: 0 0 140px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.completo input {
+    flex: 1;
+    padding: 8px 9px;
+    border: none;
+    border-bottom: 2px solid #ad1457;
+    font-family: 'Times New Roman', serif;
+    outline: none;
+    font-size: 1.1em;
+    background: transparent;
+}
+
+/*SECCIÓN DE BOTONES*/
+.botones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px; 
+    margin-top: 50px;
+}
+
+.fila-botones {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 10px; 
+    width: 100%;
+}
+
+.btn-ingresar {
+    width: 90%;
+    max-width: 400px; 
+    padding: 14px;
+    background-color: #b92967;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 28px;
+}
+
+.btn-secundario {
+    flex: 1; 
+    max-width: 200px; 
+    padding: 14px;
+    background-color: #f8bbd0;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 28px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9em; 
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-ingresar {
+    background-color: #b92967;
+    color: white;
+    border: 2px solid black;
+    border-radius: 28px;
+}
+
+.btn-ingresar:hover {
+    background-color: #b33269;
+    transform: translateY(-2px);
+    border-radius: 28px;
+}
+
+.btn-secundario {
+    background-color: #f8bbd0;
+    color: #000;
+    border-radius: 28px;
+}
+
+.btn-secundario:hover {
+    background-color: #dfacbe;
+    transform: translateY(-2px);
+    border-radius: 28px;
+}

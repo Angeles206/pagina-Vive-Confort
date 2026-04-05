@@ -1,0 +1,279 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fce4ec;
+    background-image: radial-gradient(#f8bbd0 2px, transparent 2px);
+    background-size: 30px 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HEADER --- */
+.header-tienda {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 30px;
+    background-color: #f7dde5;
+    border-bottom: 2px solid #ad1457;
+}
+.logo-img { height: 60px; object-fit: contain; }
+
+/* --- CONTENEDOR ESTILO VIVECONFORT --- */
+#contenedor-carrito {
+    max-width: 1000px; 
+    margin: 30px auto; 
+    background-color: rgba(244, 211, 221, 0.8); 
+    padding: 30px; 
+    border-radius: 35px;
+    min-height: 70vh;
+}
+
+.titulo-pagina {
+    text-align: center;
+    color: #ad1457;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    margin-bottom: 25px;
+}
+
+/* --- TABLA --- */
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+    margin-top: 20px;
+}
+
+.tabla-carrito th {
+    border-bottom: 3px solid #ad1457;
+    color: #ad1457;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.tabla-carrito td {
+    padding: 15px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nombre-celda { font-weight: bold; }
+
+/* --- FOTO PRODUCTO --- */
+.cuadro-foto-carrito {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cuadro-foto-carrito img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* --- TOTAL --- */
+.seccion-total {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8bbd0;
+    border: 2px solid #000;
+    padding: 20px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.total-monto { color: #ad1457; }
+
+/* --- BOTONES --- */
+.contenedor-botones-final {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.btn-seguir, .btn-confirmar {
+    padding: 15px 35px;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-seguir { background-color: #d896a7; color: #000; }
+.btn-confirmar { background-color: #ad1457; color: white; }
+
+.btn-seguir:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(173, 20, 87, 0.3);
+   background-color: #ad1457;
+   color: #fff;
+}
+
+.btn-confirmar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(173, 20, 87, 0.3);
+   background-color: #d896a7;
+   color: #000;
+}
+
+.btn-borrar {
+    text-decoration: none;
+    font-size: 1.8em;
+    color: #ad1457;
+}
+
+/* --- ESTILO CUADRO DE BLOQUEO (IGUAL A FAVORITOS) --- */
+.pantalla-bloqueo-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.cuadro-bloqueo {
+    background-color: white;
+    border: 2px solid #000;
+    border-radius: 25px;
+    padding: 60px 40px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 12px 12px 0px #ad1457;
+}
+
+.titulo-bloqueo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    color: #ad1457;
+    margin-bottom: 20px;
+}
+
+.texto-bloqueo {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.btn-login-bloqueo {
+    display: inline-block;
+    background-color: #ad1457;
+    color: white !important;
+    padding: 15px 40px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-volver-suave {
+    display: block;
+    margin-top: 20px;
+    color: #ad1457;
+    text-decoration: underline;
+}
+
+.mensaje-vacio {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+/* Enlace del nombre del producto */
+.link-producto {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+}
+
+.link-producto:hover {
+    color: #ad1457; /* El rosa fuerte de ViveConfort */
+    text-decoration: underline;
+}
+
+/* Estilo para la columna de Tono */
+.tono-celda {
+    font-style: italic;
+    color: #8a274b;
+    font-weight: bold;
+    text-transform: capitalize; /* Para que la primera letra sea mayúscula */
+}
+
+/* Efecto en la foto al pasar el mouse */
+.cuadro-foto-carrito {
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cuadro-foto-carrito:hover {
+    transform: scale(1.1); /* Hace que la foto crezca un poquito */
+    border-color: #ad1457;
+}
+/* --- MEJORAS DE HOVER --- */
+
+/* Efecto para el botón de borrar (basurero) */
+.btn-borrar {
+    transition: all 0.3s ease; /* Suaviza el cambio de color y tamaño */
+    display: inline-block;
+}
+
+.btn-borrar:hover {
+    color: #8d1549; 
+    transform: scale(1.2) rotate(10deg); 
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2)); 
+}
+
+.cuadro-foto-carrito {
+    border: 2px solid transparent; 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+}
+
+.cuadro-foto-carrito:hover {
+    transform: scale(1.15); 
+    border-color: #ad1457;
+    box-shadow: 0 8px 15px rgba(173, 20, 87, 0.2); 
+    z-index: 10; 
+}
+
+.cuadro-foto-carrito:hover img {
+    filter: brightness(1.05);
+}
+
+.footer-perfil { 
+    text-align: center; 
+    margin: 30px 0;
+}
+
+.btn-volver { 
+    text-decoration: none; 
+    background: #d896a7; 
+    color: #000; 
+    padding: 12px 25px; 
+    border: 2px solid #000; 
+    border-radius: 20px; 
+    font-weight: bold;
+}
+
+.btn-volver:hover { 
+    background-color: #8a274b; 
+    color: #fff; 
+}
+
+.btn-perfil { 
+    text-decoration: none; 
+    background: #d896a7; 
+    color: #000; 
+    padding: 12px 25px; 
+    border: 2px solid #000; 
+    border-radius: 20px; 
+    font-weight: bold; 
+}
+
+.btn-perfil:hover { 
+    background-color: #8a274b; 
+    color: #fff; 
+}

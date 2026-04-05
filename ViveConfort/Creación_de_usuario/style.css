@@ -1,0 +1,151 @@
+/* Ajustes de Base */
+body {
+    font-size: 16px; 
+    font-family: 'Times New Roman', Times, serif; 
+    background-color: #fce4ec;
+    background-image: radial-gradient(#f8bbd0 2px, transparent 2px);
+    background-size: 30px 30px;
+    margin: 0;
+    padding: 30px 0;
+}
+
+input, label, .btn-accion, .btn-guardar, .btn-cancelar {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Contenedor */
+#contenedor {
+    background: #ffffff;
+    margin: 0 auto;
+    padding: 2.5em;
+    width: 95%;
+    max-width: 1100px; 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #ad1457;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+/* EL BOTÓN  */
+.botones-centro {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    display: block;
+}
+
+.btn-principal {
+    display: inline-block !important;
+    background-color: #d896a7 !important;
+    color: #333 !important;
+    padding: 15px 40px !important;
+    border-radius: 30px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    border: 2px solid #000 !important; 
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+}
+
+/* EFECTO HOVER*/
+.btn-principal:hover {
+    background-color: #ad1457 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 15px rgba(173, 20, 87, 0.4) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* 4. Buscador y Tabla */
+.input-busqueda {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: 2px solid #f8bbd0;
+    text-align: center;
+    outline: none;
+}
+
+.tabla-container { 
+    width: 100%; 
+    overflow-x: auto; 
+}
+
+table {
+     width: 100%; 
+     border-collapse: 
+     collapse; 
+}
+
+th { 
+    color: #ad1457; 
+    background-color: #fff0f5; 
+    padding: 15px; 
+    text-align: left; 
+}
+
+td { 
+    padding: 15px; 
+    border-bottom: 1px solid #fce4ec; 
+}
+
+.btn-edit { 
+    color: #b6326b; 
+    text-decoration: none; 
+    font-weight: bold; 
+    margin-right: 15px; 
+}
+
+.btn-delete { 
+    color: #660a32; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+.footer-acciones { 
+    text-align: center; 
+    margin: 30px 0px;
+    display: flex;
+    justify-content: center; 
+    gap: 15px;
+   
+}
+
+.btn-volver { 
+    text-decoration: none; 
+    background: #d896a7; 
+    color: #000; 
+    padding: 12px 25px; 
+    border: 2px solid #000; 
+    border-radius: 20px; 
+    font-weight: bold;
+}
+
+.btn-volver:hover { 
+    background-color: #8a274b; 
+    color: #fff; 
+}
+
+.btn-perfil { 
+    text-decoration: none; 
+    background: #d896a7; 
+    color: #000; 
+    padding: 12px 25px; 
+    border: 2px solid #000; 
+    border-radius: 20px; 
+    font-weight: bold; 
+}
+
+.btn-perfil:hover { 
+    background-color: #8a274b; 
+    color: #fff; 
+}

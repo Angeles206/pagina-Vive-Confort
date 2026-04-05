@@ -1,0 +1,263 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fce4ec;
+    background-image: radial-gradient(#f8bbd0 2px, transparent 2px);
+    background-size: 30px 30px;
+    margin: 0;
+    color: #000;
+}
+
+/* --- HEADER --- */
+.header-tienda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #f7dde5;
+    border-bottom: 2px solid #ad1457;
+}
+
+.logo-img { height: 65px; }
+
+.header-derecha {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Estilo para el corazón del header */
+.btn-favorito-emoji {
+    text-decoration: none;
+    color: #ad1457; /* El rosa de tu marca */
+    font-size: 36px; /* Tamaño estándar de emoji de carrito */
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.btn-favorito-emoji:hover {
+    transform: scale(1.1);
+    color: #c78ca1; /* Un tono un poco más claro al pasar el mouse */
+}
+
+/* Ajuste general para que los tres iconos estén bien alineados */
+.iconos-header {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaciado entre corazón, carrito y perfil */
+}
+
+.btn-carrito-emoji {
+    text-decoration: none; 
+    font-size: 28px;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.header-icon-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #ad1457;
+    object-fit: cover;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.header-icon-img:hover { transform: scale(1.1); border-color: #000; }
+
+/* --- CONTENEDOR Y GRID --- */
+#contenedor-principal {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px; /* Reducido de 60px a 40px */
+}
+
+.detalle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+/* --- SECCIÓN IMAGEN --- */
+.seccion-imagen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flecha-regresar-top {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    background-color: #ad1457;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.8em;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border: 2px solid #000;
+    transition: 0.3s;
+    z-index: 10;
+}
+
+.cuadro-foto {
+    border: 3px solid #000;
+    background: #c78ca1;
+    border-radius: 15px;
+    width: 380px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 8px 8px 0px #ad1457;
+}
+
+.cuadro-foto img { width: 100%; height: 100%; object-fit: contain; }
+
+.miniaturas { display: flex; gap: 15px; margin-top: 25px; }
+
+.thumb {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #ad1457;
+    border-radius: 10px;
+    cursor: pointer;
+    background: white;
+}
+
+/* --- SECCIÓN INFORMACIÓN COMPACTA --- */
+.seccion-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Controla el espacio global entre párrafos */
+}
+
+.nombre-producto {
+    font-size: 2.5em;
+    margin: 0;
+    line-height: 1.1; /* Hace el título más compacto */
+}
+
+.marca-producto {
+    font-size: 1.4em;
+    color: #444;
+    margin: 0;
+}
+
+.precio-producto {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #ad1457;
+    margin: 0;
+}
+
+.tonos-area {
+    margin: 10px 0; /* Espacio reducido */
+}
+
+.tonalidades-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.selector-tonos {
+    width: 100%;
+    max-width: 240px;
+    padding: 10px 15px;
+    background-color: #fce4ec;
+    border: 2px solid #000;
+    border-radius: 12px;
+    color: #ad1457;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ad1457' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 18px;
+    outline: none;
+}
+
+.stock {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+/* --- BOTONES Y CORAZÓN (Alineados) --- */
+.controles-compra {
+    display: flex;
+    gap: 15px; /* Espacio entre cantidad, carrito y corazón */
+    align-items: center;
+    margin-top: 15px;
+}
+
+.selector-cantidad {
+    border: 2px solid #000;
+    background: #dfacbe;
+    border-radius: 10px;
+    display: flex;
+}
+
+.selector-cantidad button { background: none; border: none; padding: 10px 15px; cursor: pointer; font-weight: bold; }
+
+.selector-cantidad input {
+    width: 40px;
+    border: none;
+    text-align: center;
+    background: none;
+    font-weight: bold;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+/* Mejora para el botón de añadir */
+.btn-añadir {
+    background: #dfacbe;
+    border: 2px solid #000;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    height: 45px; /* Para que mida lo mismo que la cantidad */
+    display: flex;
+    align-items: center;
+}
+
+.btn-añadir:hover {
+    background-color: #ad1457;
+    color: white;
+}
+
+/* Mejora para el corazón */
+.btn-corazon {
+    font-size: 40px; /* Tamaño ajustado */
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    user-select: none;
+    line-height: 1;
+    color: black; /* Color inicial */
+    display: inline-block;
+}
+
+.btn-corazon:hover {
+    transform: scale(1.2);
+    color: #ad1457;
+}
+
+/* Clase para cuando ya es favorito (se puede activar con JS) */
+.btn-corazon.activo {
+    color: #ad1457;
+}

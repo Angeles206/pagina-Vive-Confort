@@ -1,0 +1,143 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #fce4ec;
+    background-image: radial-gradient(#f8bbd0 2px, transparent 2px);
+    background-size: 25px 25px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#contenedor-factura {
+    background-color: rgba(243, 223, 229, 0.8); 
+    width: 850px;
+    padding: 40px;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.titulo-pagina {
+    text-align: center;
+    color: #ad1457;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    margin-bottom: 25px;
+}
+
+.mensaje-vacio {
+    text-align: center;
+    color: #000000;
+    font-size: 3.5em;
+    margin-bottom: 25px;
+}
+
+/* --- TABLA SIN LINEAS INTERNAS --- */
+.resumen-caja {
+    background-color: rgba(236, 187, 202, 0.8); 
+    border: 1px solid #ad1457;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+.tabla-resumen {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Solo línea en el encabezado y al final para el total */
+.tabla-resumen th { 
+    text-align: left; 
+    padding-bottom: 10px; 
+    border-bottom: 1.5px solid #000; 
+}
+
+.tabla-resumen td { 
+    padding: 8px 0; 
+    border: none; /* Quitamos todas las líneas de las celdas */
+}
+
+.fila-total { 
+    font-weight: bold; 
+    border-top: 1.5px solid #000; /* Línea solo arriba del total */
+}
+
+/* --- DIVISIÓN 50/50 --- */
+.info-envio-pago {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.metodo-pago {
+    flex: 1; 
+    padding-right: 10px;
+}
+
+.divisor-vertical {
+    border-left: 2px dotted #881044;
+    height: 180px;
+    margin: 0; /* Asegura posición central entre los dos flex-1 */
+}
+
+.datos-usuario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px; /* Espacio hacia la derecha para que no pegue a la línea */
+}
+
+.dato-bloque { margin-bottom: 12px; display: flex; flex-direction: column; }
+
+.btn-editar {
+    color: #ad1457;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+.btn-editar:hover{
+    transform: translateY(-3px);
+    color: #881044; 
+}
+
+
+/* Botones Finales */
+.acciones-finales { display: flex; justify-content: space-between; margin-top: 40px; }
+
+.btn-regresar {
+    background: #e197b1;
+    color: rgb(0, 0, 0);
+    padding: 12px 50px;
+    text-decoration: none;
+    border: 1px solid #000;
+    border-radius: 18px;
+}
+
+.btn-regresar:hover{
+    transform: translateY(-3px);
+    border-color: #ad1457;
+    background-color: #ad1457;
+}
+
+.btn-confirmar {
+    background: #ad1457;
+    color: white;
+    padding: 12px 50px;
+    border: 2px solid #000;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 18px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.btn-confirmar:hover{
+    transform: translateY(-3px);
+    border-color: #d896a7;
+    background-color: #d896a7;
+    color: #000;
+}

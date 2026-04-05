@@ -1,0 +1,306 @@
+/* Características generales de la página */
+body {
+  font-size: 16px; 
+  font-family: 'Times New Roman', Times, serif; 
+  background-color: #fce4ec;
+  background-image: radial-gradient(#f8bbd0 2px, transparent 2px);
+  background-size: 30px 30px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+input, label, .btn-accion, .btn-guardar, .btn-cancelar {
+    font-family: 'Times New Roman', Times, serif;    
+}
+
+.alerta {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    animation: fadeInDown 0.5s ease;
+}
+
+.alerta-exito {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alerta-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* El contenedor principal */
+#contenedor { 
+  width: 90%;
+  max-width: 600px;   
+  margin: 40px auto; 
+  background: white; 
+  padding: 40px; 
+  border-radius: 30px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+  display: block;    
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  border-top: 1px solid #f8bbd0;
+  margin: 1em 0;
+  padding: 1.2em 0;
+  overflow: hidden;
+}
+
+.footer-acciones { 
+    text-align: center; 
+    margin: 30px 0;
+}
+
+.btn-volver { 
+    text-decoration: none; 
+    background: #d896a7; 
+    color: #000; 
+    padding: 12px 25px; 
+    border: 2px solid #000; 
+    border-radius: 30px; 
+    font-weight: bold;
+}
+
+.btn-volver:hover { 
+    background-color: #8a274b; 
+    color: #fff; 
+}
+
+.btn-perfil { 
+    text-decoration: none; 
+    background: #d896a7; 
+    color: #000; 
+    padding: 12px 25px; 
+    border: 2px solid #000; 
+    border-radius: 30px; 
+    font-weight: bold;
+}
+
+.btn-perfil:hover { 
+    background-color: #8a274b; 
+    color: #fff; 
+}
+
+/* Títulos a la izquierda */
+ul li label.titulo {
+  float: left;
+  width: 150px;
+  text-align: right;
+  font-weight: bold;
+  color: #1d1d1d;
+  padding-top: 10px;
+}
+
+/* Controles a la derecha */
+ul li div.controles {
+  margin-left: 170px;
+}
+
+/* Inputs con estilo de línea inferior */
+ul li input {
+  padding: 10px;
+  font-size: 16px; 
+  width: 90%;         
+  max-width: 300px;    
+  border: 1px solid transparent;
+  border-bottom: 2px solid #c27ba0;
+  background: transparent;
+  transition: 0.3s;
+  display: inline-block; /
+}
+
+ul li input:focus {
+  outline: none;
+  border-bottom: 2px solid #ad1457;
+  background-color: rgba(43, 42, 43, 0.2);
+}
+
+/* Etiquetas de ayuda */
+ul li div span label {
+  display: block;
+  font-size: 12px;
+  color: #460a24;
+  margin-top: 5px;
+}
+
+/* --- SECCIÓN DE BOTONES --- */
+.botones-container {
+  display: flex;
+  flex-direction: row; 
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.btn-accion {
+    display: inline-flex !important; 
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px !important; 
+    padding: 12px 30px !important;
+    width: auto !important; 
+    min-width: 220px;
+    background-color: #d896a7;
+    color: #000;
+}
+
+/* Hover oscuro */
+.btn-accion:hover { 
+  background-color: #ad1457; 
+  color: white;
+}
+
+h1 {
+  color: #c27ba0;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#contenedor { 
+  display: table;
+  margin: 40px auto;
+  background: white; 
+  padding: 40px; 
+  border-radius: 30px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  min-width: 600px;
+  max-width: 95%;
+}
+
+.buscador-caja { margin-bottom: 30px; text-align: center; }
+.buscador-caja input { 
+  padding: 12px 25px; width: 400px; border-radius: 30px; 
+  border: 1px solid #f79bd0; outline: none; font-size: 16px;
+}
+
+  table { width: 100%; border-collapse: collapse; }
+  th, td { padding: 30px 10px; border-bottom: 1px solid #fdf0f6; text-align: left; white-space: nowrap; }
+        
+ th { background-color: #fce4ec; color: #ad1457; font-weight: bold; text-transform: uppercase; font-size: 13px; }
+
+.btn-edit { color: #c03974; font-weight: bold; text-decoration: none; margin-right: 15px; cursor: pointer; }
+.btn-delete { color: #5c0b2e; font-weight: bold; text-decoration: none; cursor: pointer; }
+        
+  h1 { color: #ad1457; margin-bottom: 25px; text-align: center; }
+  .botones-container { text-align: center; margin-bottom: 20px; 
+  }
+        
+/* Registro desde la base de datos */
+#contenedor { 
+  max-width: 500px; 
+  margin: 50px auto; 
+  background: white; 
+  padding: 40px; 
+  border-radius: 30px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+        }
+
+h1 { color: #ad1457; text-align: center; margin-bottom: 30px; }
+
+.controles input { 
+  width: 100%; 
+  padding: 10px; 
+  margin-top: 5px; 
+  border: 1px solid #ffc1e3; 
+  border-radius: 10px; 
+  outline: none;
+}
+
+.botones-centro {
+    text-align: center;
+    margin: 20px 0 30px 0;
+    display: block;
+}
+
+.btn-principal {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px !important;
+    width: auto !important; 
+    min-width: 220px;
+}
+
+/* EFECTO HOVER*/
+.btn-principal:hover {
+    background-color: #ad1457 !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 15px rgba(173, 20, 87, 0.4) !important;
+    transform: translateY(-3px) !important;
+}
+
+.btn-guardar { background-color: #fce4ec; color: #ad1457; border: 2px solid #ad1457; border-radius: 30px; }
+.btn-cancelar { background-color: #fce4ec; color: #ad1457;  border: 2px solid #ad1457; border-radius: 30px;
+}
+
+/* --- ESTILOS FINALES PARA BOTONES DE REGISTRO --- */
+
+/* Forzamos el diseño de borde negro y Times New Roman */
+.btn-accion, .btn-guardar, .btn-cancelar {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    border: 2px solid #000 !important; /* El borde negro sólido */
+    border-radius: 30px !important;
+    padding: 12px 20px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    display: inline-block !important;
+    text-align: center !important;
+    transition: 0.3s ease !important;
+    width: 42%; 
+    border-radius: 18px;
+}
+
+/* Color específico para botones de guardar/agregar */
+.btn-guardar {
+    background-color: #c27ba0 !important;
+    color: white !important;
+}
+
+/* Color específico para botones de volver/cancelar */
+.btn-cancelar {
+    background-color: #f8bbd0 !important;
+    color: #ad1457 !important;
+}
+
+/* Efecto hover unificado para que todos se vuelvan vino al pasar el mouse */
+.btn-accion:hover, .btn-guardar:hover, .btn-cancelar:hover {
+    background-color: #ad1457 !important;
+    color: white !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 5px 15px rgba(173, 20, 87, 0.3) !important;
+}
+
+/* Contenedor para que queden alineados */
+.botones-container {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    margin-top: 25px !important;
+    width: 100% !important;
+    border-top: none !important; /* Quita la línea rosa del <li> en esta sección */
+}

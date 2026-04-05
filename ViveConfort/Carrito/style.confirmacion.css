@@ -1,0 +1,56 @@
+body {
+    background-color: #fce4ec; /* Rosa suave de ViveConfort */
+    background-image: radial-gradient(#ad1457 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor-exito {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 2px solid #ad1457;
+    max-width: 500px;
+    width: 90%;
+}
+
+.titulo-gracias {
+    font-family: 'Pacifico', cursive;
+    color: #ad1457;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.pedido-info {
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.icono-bolsa {
+    width: 80px;
+    margin: 20px 0;
+}
+
+.btn-continuar {
+    background-color: #ad1457;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-continuar:hover {
+    background-color: #880e4f;
+    transform: scale(1.05);
+}

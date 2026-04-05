@@ -1,0 +1,72 @@
+/* Importar fuente para el título */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body {
+    background-color: #fce4ec; /* El rosa de ViveConfort */
+    background-image: radial-gradient(#ad1457 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.caja-exito {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(173, 20, 87, 0.2);
+    text-align: center;
+    border: 2px solid #ad1457;
+    max-width: 450px;
+    animation: fadeIn 0.8s ease-out;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #ad1457;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.numero-pedido {
+    background: #f8d7da;
+    color: #ad1457;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+.btn-volver {
+    background-color: #ad1457;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #880e4f;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(136, 14, 79, 0.3);
+}
+
+/* Animación de entrada suave */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

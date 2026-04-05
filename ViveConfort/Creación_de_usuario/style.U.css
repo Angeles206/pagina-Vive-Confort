@@ -1,0 +1,73 @@
+body { 
+    background-color: #fce4ec; 
+    background-image: radial-gradient(#f8bbd0 2px, transparent 2px);
+    background-size: 30px 30px;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+input, label, .btn-accion, .btn-guardar, .btn-cancelar {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* El contenedor blanco redondeado */
+#contenedor { 
+    max-width: 650px; 
+    margin: 30px auto; 
+    background: white; 
+    padding: 40px; 
+    border-radius: 40px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+}
+
+h1 { color: #ad1457; text-align: center; margin-bottom: 25px; }
+
+.grid-campos { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+/* Campos que ocupan todo el ancho */
+.campo-completo { grid-column: span 2; }
+
+label { color: #ad1457; font-weight: bold; font-size: 14px; display: block; margin-bottom: 8px; }
+
+input { 
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ffc1e3; 
+    border-radius: 12px; 
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input:focus { border-color: #ad1457; box-shadow: 0 0 5px rgba(173, 20, 87, 0.2); }
+
+/* Botones */
+.botones-container { text-align: center; margin-top: 30px; }
+
+.btn-accion { 
+    padding: 12px 30px; 
+    border-radius: 30px; 
+    border: none; 
+    cursor: pointer; 
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-guardar { 
+    background-color: #fce4ec; 
+    color: #ad1457; 
+    border: 2px solid #ad1457; 
+    transition: 0.3s;
+}
+
+
+.btn-guardar:hover {
+    background-color: #ad1457 !important;
+    color: white !important;
+}
+
+.btn-cancelar { background-color: #eee; color: #333; margin-left: 10px; }
